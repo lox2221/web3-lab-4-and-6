@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Головна</title>
+		<link rel='stylesheet' href='style.css'/>
+		<meta charset="utf-8"/>
+    </head>
+    <body>
+        <header>
+            <h1>ІСТ-23-1</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="list.html">Список групи</a></li>
+                <li><a href="schedule.html">Розклад</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="somemistakes.html">Донесення про помилку</a></li>
+            </ul>
+        </nav>
+        <main>
+            <aside>
+                <h2>Корисні посилання</h2>
+                <ul>
+                    <li><a href='https://nung.edu.ua'>Сайт ІФНТУНГ</a></li>
+                    <li><a href='https://dekanat.nung.edu.ua'>Розклад</a></li>
+                    <li><a href='https://dn.nung.edu.ua'>Система дистанційного навчання</a></li>
+                </ul>
+            </aside>
+            <article>
+                <h1>Донесення про помилку</h1>
+                <form action="/submit-error" method="post" enctype="multipart/form-data">
+                    <label for="name">Ім'я:</label>
+                    <input type="text" id="name" name="name" placeholder="Ваше ім'я" required>
+                
+                    <label for="email">Електронна пошта:</label>
+                    <input type="email" id="email" name="email" placeholder="Ваш email" required>
+                
+                    <label for="url">URL сторінки:</label>
+                    <input type="url" id="url" name="url" placeholder="Посилання на сторінку" required>
+                
+                    <label for="errorType">Тип помилки:</label>
+                    <select id="errorType" name="errorType" required>
+                        <option value="">Оберіть тип помилки</option>
+                        <option value="technical">Технічна</option>
+                        <option value="content">Зміст</option>
+                        <option value="design">Дизайн</option>
+                        <option value="other">Інша</option>
+                    </select>
+                
+                    <label for="description">Опис:</label>
+                    <textarea id="description" name="description" rows="5" placeholder="Опишіть помилку детальніше" required></textarea>
+                
+                    <label>
+                        <input type="checkbox" id="screenshot" name="screenshot">
+                        Прикріпити знімок екрана
+                    </label>
+                
+                    <button type="submit">Відправити</button>
+                </form>
+            </article>
+            <aside>
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="list.html">Список групи</a></li>
+                    <li><a href="schedule.html">Розклад</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                </ul>
+            </aside>
+        </main>
+        <footer div class="down-footer">
+            <div class="social-info">
+                <ul>
+                    <li><a class="social-link" href="https://www.facebook.com/IFNTUOG/?locale=uk_UA"><img src="img/facebook.png"/></a></li>
+                    <li><a class="social-link" href="https://www.instagram.com/ifntuog/"><img src="img/instagram.png"/></a></li>
+                    <li><a class="social-link" href="https://www.tiktok.com/discover/ifntuog"><img src="img/tiktok.png"/></a></li>
+                    <li><a class="social-link" href="https://www.youtube.com/channel/UCYdrqFzK6wiczy4APixYy3A"><img src="img/youtube.png"/></a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <div ><p><a href="https://maps.app.goo.gl/bz1Skc3ejgHRUACm7"><div><img src="img/geo.png"></div>вул. Карпатська, 15, м.Івано-Франківськ, Україна</a></p></div>
+                <div ><p><a href="tel:+380342547266"><div><img src="img/phone.png"></div>+380(342)54-72-66</a></p></div>
+                <div ><p><a href="mailto:admin@nung.edu.ua"><div><img src="img/mail.png"></div>admin@nung.edu.ua</a></p></div>
+            </div>
+            <div>
+                <div class="copyright-mark">© IFNTUOG 2024</div>
+            </div>
+                
+        </div>
+        </footer>
+    </body>
+</html>
